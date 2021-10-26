@@ -1,0 +1,114 @@
+html body {
+  margin: 0;
+  padding: 0;
+  min-width: 100%;
+  box-sizing: border-box;
+  background-color: #f1f1f1;
+  min-height: 100%;
+}
+
+.container {
+  height: 100%;
+}
+
+.navbar {
+  position: sticky;
+  background-color: transparent;
+  height: 40px;
+  width: 100%;
+  border: 5px solid red;
+}
+
+.headerpg {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to left, rgb(204, 86, 10), rgb(204, 86, 10));
+}
+
+.headerTitle {
+  margin: 25px auto;
+  /* padding: 15px; */
+  background-color: #f1f1f1;
+  width: 85%;
+  height: 85vh;
+  border: 5px solid #606060;
+  border-radius: 20px;
+  font-family: "Chivo", sans-serif;
+}
+
+div span {
+  font-size: 6rem;
+  color: #cc560a;
+}
+
+div p {
+  font-size: 30px;
+}
+
+section {
+  margin: 25px auto;
+  background-color: #f1f1f1;
+  width: 85%;
+  height: 95vh;
+  border: 5px solid #606060;
+  border-radius: 20px;
+}
+
+section h2 {
+  padding-left: 15px;
+  color: #cc560a;
+}
+.aboutpg {
+  display: flex;
+  flex-direction: row;
+}
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+@media (max-width: 400px) {
+  .aboutpg {
+    flex-direction: column;
+  }
+}
+
+/* who we are background image */
+.bgImageContainer {
+  flex-grow: 5;
+  /* The image used */
+  background-image: url("/IMAGES/MsokiFlooring.jpeg");
+  backdrop-filter: blur(3px);
+
+  /* Full height */
+  min-height: 60vh;
+
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-size: cover;
+
+  border-radius: 20px;
+}
+
+.sectTitle {
+  flex-grow: 2;
+}
+
+/* Position text in the middle of the page/image */
+.bg-text {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(3px);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: #cc560a;
+  font-weight: bold;
+  font-size: 35px;
+  border: 3px solid transparent;
+  border-radius: 20px;
+
+  width: 65%;
+  height: 64%;
